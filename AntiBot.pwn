@@ -1,5 +1,5 @@
 																																																																																					/*
-	Anti Bot v0.1
+	Anti Bot v0.2
 	github.com/SatirAkaEmir/samp-antibot
 	Credits - Satir
 																																																																																																												*/
@@ -10,7 +10,7 @@ main()
 	print("Anti Bot Scripti Yükleniyor... ~ by Satir");
 }
 //================================DEFINE=========================================
-#define MAX_BOT_BAGLANTI 2  //Aynı IP'den En Fazla 2 Bağlantı Yapılabilir. (Değiştirebilirsiniz)
+#define MAX_BOT_BAGLANTI 2
 //================================PUBLICS========================================
 public OnFilterScriptInit()
 {
@@ -58,6 +58,9 @@ stock BotBanla(playerid) // Oyuncuyu banlar.
 	new PlayerName[25];
 	GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
 	printf("%s Aynı Anda Çok Fazla Bağlantı Yaptığı için Banlandı.", PlayerName);
+	new o[150];
+	format(o, sizeof(o), "%s aynı anda çok fazla bağlantı yaptığı için banlandı.", PlayerName);
+	SendClientMessageToAll(0xFF8E3DFF, o);
 	Ban(playerid);
 	return 1;
 }
