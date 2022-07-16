@@ -1,5 +1,13 @@
 # samp-antibot
 Anti Bot System for SAMP Servers
 
-AntiBot.pwn isimli dosyayı filterscripts klasörüne atın. Sunucu klasörünüzdeki Pawno Editörü açın ve "Open" butonundan AntiBot.pwn'yi seçin. "Compile/Run" butonuna basıp Pawn dosyasını derleyin. server.cfg isimli dosyayı açıp "filterscripts" karşısına "AntiBot" yazın.
+ENG: 
+Installation Description:
+Put the file named AntiBot.amx in the filterscripts folder. 
+Open the file named server.cfg and type "AntiBot" in front of "filterscripts".
+
+TR: 
+Kurulum:
+AntiBot.amx isimli dosyayı filterscripts klasörüne atın. 
+server.cfg isimli dosyayı açıp "filterscripts" karşısına "AntiBot" yazın.
  
